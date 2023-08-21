@@ -1,0 +1,193 @@
+
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 55px;
+}
+
+
+.header .left-section{
+    display: flex;
+    width: 200px;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header .mid-section{
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .right-section{
+    width: 200px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hamburger-logo{
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+    border-radius: 20px;
+    padding: 6px;
+    transition: background-color 0.2s;
+}
+
+.hamburger-logo:hover{
+    cursor: pointer;
+    background-color: rgba(92, 92, 92, 0.5);
+}
+
+.youtube-logo{
+    width: 120px;
+    height: 75px;
+}
+
+.youtube-logo:hover{
+    cursor: pointer;
+}
+
+
+
+.hidden-icon{
+    display: flex;
+    align-items: center;
+
+
+    width: 17px;
+    margin-left: 10px;
+
+    height: 37px;
+    border-radius: 50px 0px 0px 50px;
+    border: 1px solid rgba(92, 92, 92, 0.5);
+    border-right: none;
+}
+
+.hidden-icon .search-icon-image{
+    display: none;
+    width: 14px;
+
+}
+
+
+.search-bar{
+    background: none;
+    width: 570px;
+    height: 35px;
+    border: 1px solid rgba(92, 92, 92, 0.5);
+    border-left: none;
+    font-size: 16px;
+    outline: none;
+
+    color: white;
+}
+
+.search-bar:focus{
+    border-color: rgb(74, 74, 255);
+}
+
+
+.search-icon-button{
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    width: 64px;
+    height: 39px;
+    border: 1px solid rgba(92, 92, 92, 0.5);
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-icon-button{
+    cursor: pointer;
+}
+
+.search-icon-image{
+    width: 18px;
+}
+
+
+
+
+
+
+.three-vertical-dots {
+    color: white;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    padding: 4px 5px;
+    border: 1px solid transparent; 
+    transition: background-color 0.2s, border-color 0.7s;
+
+}
+
+
+
+.three-vertical-dots:hover{
+    cursor: pointer;
+}
+
+.three-vertical-dots:active {
+    transition: background-color 0.05s, border-color 0.05s;
+
+    background-color: rgba(92, 92, 92, 0.5);
+    border-color: rgba(92, 92, 92, 0.5);
+
+}
+
+.log-in-button{
+    display: flex;
+    background: none;
+    border: 1px solid rgb(62, 62, 62);
+    border-radius: 25px;
+    height: 38px;
+    width: 110px;
+
+    align-items: center;
+
+    margin-right: 20px;
+
+}
+
+.log-in-button:hover{
+    cursor: pointer;
+    background-color: rgba(89, 143, 229, 0.549);
+}
+
+.log-in-button:active{
+    background-color: rgba(124, 174, 255, 0.549);
+
+}
+
+.person-logo{
+    width: 27px;
+    height: 27px;
+}
+
+.log-in-text{
+    color: #3ea6ff;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}

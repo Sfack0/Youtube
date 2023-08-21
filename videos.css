@@ -1,0 +1,108 @@
+.video-page{
+    flex: 1;
+
+    display: grid;
+    grid-template-rows: 335px 335px 335px;
+    grid-template-columns: 375px 375px 375px;
+
+    margin: 18px 100px 50px 92px;
+}
+
+
+
+.video{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 12px 15px 0px;
+    align-items: center;
+
+}
+
+.video:hover{
+    cursor: pointer;
+}
+
+.video .thumbnail{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.video-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.video-info .pfp{
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    border-radius: 50% ;
+
+    margin: 10px 6px;
+}
+
+
+.video-text{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    color: white;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    padding-top: 10px;
+    margin-left: 5px;
+
+    line-height: 1.4;
+}
+
+
+.channel-name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 15%;
+    color: rgb(157, 157, 157);
+
+}
+
+.views-date{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    height: 15%;
+    color: rgb(157, 157, 157);
+    padding-top: 0px;
+    margin-left: 5px;
+
+}
+
+.live{
+    display: flex;
+    width: 75px;
+    background-color: rgb(180, 10, 10);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+
+    text-align: right;
+    padding: 2px;
+    margin-top: 3px;
+    margin-left: 5px;
+
+
+}
+
+.live img{
+    align-content: center;
+    margin-right: 4px;
+    width: 12px;
+}

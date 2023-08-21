@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+    margin-bottom:1000px;
+    overflow-x: hidden;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: row;
+}
+
+.categories-and-videos-div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #a0a0a0;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px;
+    margin-right: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #676767;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="icon" type="image/x-icon" href="/images/youtube-logo.png">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="videos.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <img src="images/hamburger.png" alt="hamburger" class="hamburger-logo">
+            <img src="images/youtube.png" alt="youtube logo" class="youtube-logo">
+        </div>
+        <div class="mid-section">
+            <div class="hidden-icon" id="hidden-icon">
+                <img src="images/search_icon.png" alt="search icon" class="search-icon-image" id="search-icon">
+            </div>
+            <input type="text" class="search-bar" placeholder="Αναζήτηση" onfocus="showHiddenSearchIcon()" onblur="hideHiddenSearchIcon()">
+            <button  class="search-icon-button">
+                <img src="images/search_icon.png" alt="search icon" class="search-icon-image">
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="three-vertical-dots">&#8942;</div>
+            <button class="log-in-button">
+                <img src="images/person.png" alt="person" class="person-logo">
+                <p class="log-in-text">Σύνδεση</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="main-page">
+             <div class="sidebar">
+                    <div class="up-section">
+                        <button class="sidebar-button selected-sidebar" onclick="sidebarButtonClicked(this)" id="initial-sidebar-button">
+                            <img src="sidebarIcons/house.png" alt="homepage" class="home-image">
+                            <p class="home-text">Αρχική</p>
+                        </button>
+    
+                        <button class="sidebar-button" onclick="sidebarButtonClicked(this)">
+                            <img src="sidebarIcons/shorts.png" alt="shorts">
+                            <p class="shorts-text">Shorts</p>
+                        </button>
+    
+                        <button class="sidebar-button" onclick="sidebarButtonClicked(this)">
+                            <img src="sidebarIcons/subs.png" alt="subs" class="invert-color ">
+                            <p>Εγγραφές</p>
+                        </button>
+                    </div>
+
+                    <div class="down-section">
+                        <button class="sidebar-button" onclick="sidebarButtonClicked(this)">
+                            <img src="sidebarIcons/library.png" alt="library" class="invert-color">
+                            <p>Βιβλιοθήκη</p>
+                        </button>
+    
+                        <button class="sidebar-button" onclick="sidebarButtonClicked(this)">
+                            <img src="sidebarIcons/history.png" alt="history" class="invert-color">
+                            <p class="shorts-text">History</p>
+                        </button>
+    
+                        <button class="sidebar-button" onclick="sidebarButtonClicked(this)">
+                            <img src="sidebarIcons/your_videos.png" alt="your videos" >
+                            <p>Τα βίντεό σας</p>
+                        </button>
+
+                        <button class="sidebar-button" onclick="sidebarButtonClicked(this)">
+                            <img src="sidebarIcons/watch_later.png" alt="watch later" class="invert-color">
+                            <p class="shorts-text">Παρακολουθήστε α...</p>
+                        </button>
+    
+                        <button class="sidebar-button hidden" onclick="sidebarButtonClicked(this)">
+                            <img src="sidebarIcons/like.png" alt="like" >
+                            <p>Βίντεο που σας αρ...</p>
+                        </button>
+
+                        <button class="sidebar-button hidden" onclick="sidebarButtonClicked(this)">
+                            <img src="sidebarIcons/playlist.png" alt="playlist" >
+                            <p>Fav Songs 2023</p>
+                        </button>
+
+                        <button class="sidebar-button" onclick="showMoreClicked()">
+                            <img src="sidebarIcons/down_arrow.png" alt="down arrow" class="down-arrow" id="arrow">
+                            <p class="more-text">Περισσότερα</p>
+                        </button>
+                    </div>
+            </div>
+
+            <div class="categories-and-videos-div">
+                <div class="categories">
+                    <button class="selected-categories" onclick="categoryButtonClicked(this)" id="initial-categories-button">Όλα</button>
+                    <button onclick="categoryButtonClicked(this)">Μουσική</button>
+                    <button onclick="categoryButtonClicked(this)">Live</button>
+                    <button onclick="categoryButtonClicked(this)">Τηλενουβέλες</button>
+                    <button onclick="categoryButtonClicked(this)">Παιχνίδια</button>
+                    <button onclick="categoryButtonClicked(this)">Τουριστικοί προορισμοί</button>
+                    <button onclick="categoryButtonClicked(this)">Εκπομπές μαγειρικής</button>
+                    <button onclick="categoryButtonClicked(this)">Φύση</button>
+                    <button onclick="categoryButtonClicked(this)">Ποδόσφαιρο</button>
+                    <button onclick="categoryButtonClicked(this)">Πρόσφατες μεταμορφώσεις</button>
+    
+                    <button onclick="categoryButtonClicked(this)">Μουσική</button>
+                    <button onclick="categoryButtonClicked(this)">Live</button>
+                    <button onclick="categoryButtonClicked(this)">Τηλενουβέλες</button>
+                    <button onclick="categoryButtonClicked(this)">Παιχνίδια</button>
+                    <button onclick="categoryButtonClicked(this)">Τουριστικοί προορισμοί</button>
+                    <button onclick="categoryButtonClicked(this)">Εκπομπές μαγειρικής</button>
+                    <button onclick="categoryButtonClicked(this)">Φύση</button>
+                    <button onclick="categoryButtonClicked(this)">Ποδόσφαιρο</button>
+                    <button onclick="categoryButtonClicked(this)">Πρόσφατες μεταμορφώσεις</button>
+                </div>
+
+                <div class="right-shadow"  id="right-shadow">
+                    <img src="images/left_arrow.png" alt="right arrow" class="arrow-image" onclick="moveButtonsLeft('left')">
+                </div>
+    
+                <div class="left-shadow" id="left-shadow">
+                    <img src="images/right_arrow.png" alt="right arrow" class="arrow-image" onclick="moveButtonsLeft('right')">
+                </div>
+
+
+
+                <div class="video-page">
+                    <div class="video">
+                        <img src="videos/thumbnail1.png" alt="video" class="thumbnail">
+                        <div class="video-info">
+                            <img src="videos/pfp1.jpg" alt="pfp" class="pfp">
+                            <div class="video-text">
+                                <div class="title">Summer Music Mix 2023 🌊 Best Of Vocals Deep House 🌊 Coldplay, 
+                                    Justi...
+                                </div>
+                                <div class="channel-name">Tropical Mage</div>
+                                <div class="views-date">12 εκ. προβολές &#x2022 πριν από 1 μήνα</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="videos/thumbnail2.png" alt="video" class="thumbnail">
+                        <div class="video-info">
+                            <img src="videos/pfp2.jpg" alt="pfp" class="pfp">
+                            <div class="video-text">
+                                <div class="title">Tom & Jerry | Tom & Jerry in Full Screen | Classic Cartoon Compilation 
+                                    | WB Kids
+                                </div>
+                                <div class="channel-name">WB Kids</div>
+                                <div class="views-date">437 εκ. προβολές &#x2022 πριν από 1 έτος</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <img src="videos/thumbnail3.jpg" alt="video" class="thumbnail">
+                        <div class="video-info">
+                            <img src="videos/pfp3.jpg" alt="pfp" class="pfp">
+                            <div class="video-text">
+                                <div class="title">
+                                    $456,000 Squid Game In Real Life!
+                                </div>
+                                <div class="channel-name">MrBeast</div>
+                                <div class="views-date">462 εκ. προβολές &#x2022 πριν από 1 έτος</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <img src="videos/thumbnail4.png" alt="video" class="thumbnail">
+                        <div class="video-info">
+                            <img src="videos/pfp4.jpg" alt="pfp" class="pfp">
+                            <div class="video-text">
+                                <div class="title">
+                                    Eminem - Rap God (Explicit)
+                                </div>
+                                <div class="channel-name">EminemMusic</div>
+                                <div class="views-date">1.3 δισ. προβολές &#x2022 πριν από 9 έτη</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <img src="videos/thumbnail5.jpg" alt="video" class="thumbnail">
+                        <div class="video-info">
+                            <img src="videos/pfp5.png" alt="pfp" class="pfp">
+                            <div class="video-text">
+                                <div class="title">FLYING OVER NORWAY (4K UHD) - Relaxing Music Along With Beautiful Nature 
+                                    Videos
+                                </div>
+                                <div class="channel-name">Piano Relaxing</div>
+                                <div class="views-date">7,9 χιλ. προβολές &#x2022 πριν από 9 ώρες</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+                        <img src="videos/thumbnail6.png" alt="video" class="thumbnail">
+                        <div class="video-info">
+                            <img src="videos/pfp6.png" alt="pfp" class="pfp">
+                            <div class="video-text">
+                                <div class="title">lofi hip hop radio 📚 - beats to relax/study to
+                                </div>
+                                <div class="channel-name">Lofi Girl</div>
+                                <div class="views-date">31 χιλ. παρακολουθούν</div>
+                                <div class="live"><img src="images/live-icon.png" alt="">ΖΩΝΤΑΝΑ</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            
+
+
+    
+               
+    </div>
+
+
+
+    <script src="homepage.js"></script>
+    <script src="categories.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>
